@@ -1,7 +1,16 @@
-.flex-container {
+.flex-container-column {
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
+
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .flex-item {
@@ -9,11 +18,80 @@
   min-width: 300px;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   align-items: baseline;
+}
+
+.col-sx{
+background-color: #0F1503;
+width: 100%;
+}
+
+.playlist ul{
+  margin-left: -40px; /*debug*/
+}
+.playlist ul li {
+list-style-type: none;
+}
+
+.listacanzoni{
+  width: 80%;
+  height: calc(100px);
+  overflow-y: scroll;
+  margin-bottom: 25px;
 
 }
-.col-sx{
-background:rgb(222, 209, 90) ;
+
+.listacanzoni ul li p{
+
+transform:scale(0.5);
+
+}
+
+.artisti{
+  display
+}
+
+.artisti ul li.artista{
+width: calc(100% / 6);
+display: block;
+margin: 2px 5px;
+}
+
+.artista:hover{
+  transform: scale(1.2);
+}
+
+.cerchio{
+  border-radius: 50%;
+}
+
+.imgsinger{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.linea{
+  border: 2px solid grey;
+}
+
+.brani{
+width: 100%;
+height: calc(100vh - 170px);
+overflow-y: scroll;
+margin-bottom: 25px;
+}
+
+.brani ul li{
+  list-style-type: none;
+  width: calc(100% / 8);
+}
+
+.wrapper{
+  width: 80%;
+  margin: 3% 10%;
 }
 
 .col-2 {
@@ -27,12 +105,56 @@ background:rgb(222, 209, 90) ;
 }
 
 .logo{
-width: 25%;
+width: 30%;
 height: auto;
 margin-top: 3px;
 margin-bottom: 8px;
+filter: invert(1);
 }
+
 .flex-img{
   width: 6%;
   height: auto;
+  filter: invert(1);
+}
+
+.player{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px;
+}
+
+.play{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playtop{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+}
+
+.playbtm{
+  display: flex;
+  flex-direction: row;
+}
+
+.progressbar{
+  width: 240px;
+  height: 2px;
+  border:2px solid black;
+}
+
+/* classi per formattazione testo*/
+
+.text-white{
+  color: white;
 }
