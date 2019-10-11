@@ -1,0 +1,38 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+}
+
+.flex-item {
+  flex-basis: 80%;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+}
+.col-sx{
+background:rgb(222, 209, 90) ;
+}
+
+.col-2 {
+  flex-basis: 80%;
+  display: flex;
+}
+
+.col-3 {
+  flex-basis: 100%;
+  display: flex;
+}
+
+.logo{
+width: 25%;
+height: auto;
+margin-top: 3px;
+margin-bottom: 8px;
+}
+.flex-img{
+  width: 6%;
+  height: auto;
+}
