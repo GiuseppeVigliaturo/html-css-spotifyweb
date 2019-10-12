@@ -5,13 +5,22 @@
 
 }
 
-.flex-container-row {
+.flex-container-row-menu {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: baseline;
 }
+
+.flex-container-row-art {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
 
 .flex-item {
   flex-basis: 80%;
@@ -36,31 +45,51 @@ list-style-type: none;
 
 .listacanzoni{
   width: 80%;
-  height: calc(100px);
+  height: calc(20vh - 30px);
   overflow-y: scroll;
   margin-bottom: 25px;
 
 }
 
 .listacanzoni ul li p{
-
 transform:scale(0.5);
-
 }
 
-.artisti{
-  display
-}
 
 .artisti ul li.artista{
 width: calc(100% / 6);
 display: block;
-margin: 2px 5px;
+margin: 2px 7px;
+/*position: relative;*/
+}
+
+.artisti .artista img{
+position: relative;
 }
 
 .artista:hover{
-  transform: scale(1.2);
+  transform: scale(0.8);
+  background-color: ;
+
 }
+
+.più{
+  position: absolute;
+  top:10%;
+  left: 30%;
+  transition: transform(-50%, -50%);
+  display: none;
+  color: white;
+  border-radius: 50%;
+}
+
+.artista:hover .più{
+transform: scale(3);
+display: block;
+background: rgba(208, 205, 196, 0.72);
+padding:15%;
+}
+
 
 .cerchio{
   border-radius: 50%;
@@ -72,7 +101,21 @@ margin: 2px 5px;
   display: block;
 }
 
+.personaldata{
+  min-height: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: no-wrap;
+  justify-content: flex-end;
+}
 
+.app{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: baseline;
+}
 .linea{
   border: 2px solid grey;
 }
@@ -122,7 +165,7 @@ filter: invert(1);
   position: fixed;
   left: 0;
   bottom: 0;
-  background-color: red;
+  background-color: rgb(92, 174, 200);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -139,6 +182,7 @@ filter: invert(1);
 .playtop{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   margin-bottom: 3%;
 }
 
@@ -146,11 +190,20 @@ filter: invert(1);
   display: flex;
   flex-direction: row;
 }
-
+.actualartist img{
+  width: 50%;
+}
 .progressbar{
-  width: 240px;
+  min-width:150px ;
   height: 2px;
   border:2px solid black;
+}
+
+.volume{
+  display: flex;
+  align-items:center;
+  flex-basis: 10%;
+  justify-content: space-around;
 }
 
 /* classi per formattazione testo*/
