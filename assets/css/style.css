@@ -1,55 +1,56 @@
 .flex-container-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
+display: flex;
+flex-direction: column;
+flex-wrap: no-wrap;
 
 }
 
 .flex-container-row-menu {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: baseline;
 }
 
 .flex-container-row-art {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: baseline;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-start;
+align-items: baseline;
 }
 
 
 .flex-item {
-  flex-basis: 80%;
-  min-width: 300px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
+flex-basis: 80%;
+min-width: 300px;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: baseline;
 }
 
 .col-sx{
 background-color: #0F1503;
 width: 100%;
+
 }
 
 
 
 .playlist ul{
-  margin-left: -40px; /*debug*/
+margin-left: -40px; /*debug*/
 }
 .playlist ul li {
 list-style-type: none;
 }
 
 .listacanzoni{
-  width: 80%;
-  height: calc(20vh - 30px);
-  overflow-y: scroll;
-  margin-bottom: 25px;
+width: 80%;
+height: calc(20vh - 30px);
+overflow-y: scroll;
+margin-bottom: 25px;
 
 }
 
@@ -70,19 +71,19 @@ position: relative;
 }
 
 .artista:hover{
-  transform: scale(0.8);
-  background-color: ;
+transform: scale(0.8);
+background-color: ;
 
 }
 
 .più{
-  position: absolute;
-  top:10%;
-  left: 30%;
-  transition: transform(-50%, -50%);
-  display: none;
-  color: white;
-  border-radius: 50%;
+position: absolute;
+top:10%;
+left: 30%;
+transition: transform(-50%, -50%);
+display: none;
+color: white;
+border-radius: 50%;
 }
 
 .artista:hover .più{
@@ -94,32 +95,32 @@ padding:20%;
 
 
 .cerchio{
-  border-radius: 50%;
+border-radius: 50%;
 }
 
 .imgsinger{
-  width: 100%;
-  height: auto;
-  display: block;
+width: 100%;
+height: auto;
+display: block;
 }
 
 .personaldata{
-  min-height: 30px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: no-wrap;
-  justify-content: flex-end;
+min-height: 30px;
+display: flex;
+flex-direction: column;
+flex-wrap: no-wrap;
+justify-content: flex-end;
 }
 
 .app{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  align-items: baseline;
+display: flex;
+flex-direction: row;
+flex-wrap: no-wrap;
+justify-content: center;
+align-items: baseline;
 }
 .linea{
-  border: 2px solid grey;
+border: 2px solid grey;
 }
 
 .brani{
@@ -146,15 +147,6 @@ color: white;
   margin: 3% 10%;
 }
 
-.col-2 {
-  flex-basis: 80%;
-  display: flex;
-}
-
-.col-3 {
-  flex-basis: 100%;
-  display: flex;
-}
 
 .logo{
 width: 30%;
@@ -194,12 +186,13 @@ filter: invert(1);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-bottom: 3%;
+  margin-bottom: 10%;
 }
 
 .playbtm{
   display: flex;
   flex-direction: row;
+  margin-top: 10%;
 }
 
 .actualartist{
@@ -233,4 +226,93 @@ filter: invert(1);
 
 .background-color-aqua{
 background-color: #2D5734;
+}
+
+/*intervalli*/
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+.artisti ul li.artista{
+width: calc(100% / 4);
+}
+
+.brani ul li{
+  list-style-type: none;
+  width: calc(100% / 3);
+}
+
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
+
+.artisti ul li.artista{
+width: calc(100% / 3);
+}
+
+.brani ul li{
+  list-style-type: none;
+  width: calc(100% / 2);
+}
+
+.play{
+margin-top: 5%;
+}
+
+.volume{
+  margin-top: 5%;
+}
+
+}
+
+@media screen and (max-width: 419px) {
+
+.artisti ul li.artista{
+width: calc(100% / 2);
+}
+
+
+.brani{
+width: 100%;
+height: calc(100vh - 70px);
+overflow-y: scroll;
+margin-bottom: 5%;
+color: white;
+}
+
+.brani ul li{
+width:90%;
+}
+
+.player{
+position: fixed;
+left: 0;
+bottom: 0;
+background-color: #282828;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+height: 70px;
+overflow-y: scroll;
+z-index: 3;
+}
+
+.play{
+margin-top: 5%;
+}
+
+.volume{
+  margin-top: 5%;
+}
+
+.brani{
+width: 100%;
+height: auto;
+overflow-y: scroll;
+margin-bottom: 5%;
+color: white;
+
+}
+
 }
