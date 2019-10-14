@@ -71,7 +71,7 @@ position: relative;
 
 
 
-.artista:hover{
+.artista:hover .arteffect{
 opacity: 0.5;
 }
 
