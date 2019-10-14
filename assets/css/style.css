@@ -14,6 +14,15 @@ justify-content: center;
 align-items: baseline;
 }
 
+.flex-container-row-menu:hover li a{
+opacity: 0.7;
+}
+
+/*.flex-container-row-menu li:first-child {
+border-bottom: 2px solid white;
+}*/
+
+
 .flex-container-row-art {
 display: flex;
 flex-direction: row;
@@ -72,7 +81,7 @@ position: relative;
 
 
 .artista:hover .arteffect{
-opacity: 0.5;
+opacity: 0.7;
 }
 
 .più{
@@ -200,8 +209,8 @@ filter: invert(1);
   align-items: center;
   filter: invert(1);
 }
-.actualartist img{
-  width: 40%;
+.actualartist img.riprodotto{
+  width: 25%;
 }
 .progressbar{
   min-width:150px ;
@@ -233,6 +242,11 @@ border-radius: 50%;
 
 /*intervalli*/
 
+@media screen and (min-width: 992px) {
+
+
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
 
@@ -245,9 +259,13 @@ width: calc(100% / 4);
   width: calc(100% / 3);
 }
 
+
+
+
 }
 
 @media screen and (min-width: 420px) and (max-width: 767px) {
+
 
 .artisti ul li.artista{
 width: calc(100% / 3);
@@ -263,7 +281,7 @@ margin-top: 5%;
 }
 
 .volume{
-  margin-top: 5%;
+display: none;
 }
 
 }
@@ -304,8 +322,11 @@ z-index: 3;
 margin-top: 5%;
 }
 
+.actualartist{
+display: none;  
+}
 .volume{
-  margin-top: 5%;
+display: none;
 }
 
 .brani{
