@@ -323,7 +323,7 @@ margin-top: 5%;
 }
 
 .actualartist{
-display: none;  
+display: none;
 }
 .volume{
 display: none;
@@ -338,4 +338,9 @@ color: white;
 
 }
 
+}
+
+.prova{
+width: 10%;
+background: black;
 }
