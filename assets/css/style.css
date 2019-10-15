@@ -162,6 +162,14 @@ margin-bottom: 8px;
 filter: invert(1);
 }
 
+.logoprova{
+width: 100%;
+height: auto;
+margin-top: 3px;
+margin-bottom: 8px;
+filter: invert(1);
+}
+
 .flex-img{
   width: 6%;
   height: auto;
@@ -341,6 +349,7 @@ color: white;
 }
 
 .prova{
-width: 10%;
+width: 30px;
+
 background: black;
 }
