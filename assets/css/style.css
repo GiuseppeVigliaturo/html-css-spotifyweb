@@ -141,7 +141,6 @@ border: 2px solid grey;
 
 .brani{
 width: 100%;
-/*height: calc(100vh - 130px);*/
 overflow-y: scroll;
 margin-bottom: 25px;
 color: white;
@@ -230,11 +229,6 @@ filter: invert(1);
 }
 .actualartist img.riprodotto{
   width: 25%;
-}
-.progressbar{
-  min-width:150px ;
-  height: 2px;
-  border:2px solid black;
 }
 
 .loader{
@@ -329,6 +323,18 @@ animation-delay: 1.3s;
 
 .loader span:nth-child(15){
 animation-delay: 1.4s;
+}
+
+.loader span:nth-child(16){
+animation-delay: 1.5s;
+}
+
+.loader span:nth-child(17){
+animation-delay: 1.6s;
+}
+
+.loader span:nth-child(18){
+animation-delay: 1.7s;
 }
 
 .volume{
