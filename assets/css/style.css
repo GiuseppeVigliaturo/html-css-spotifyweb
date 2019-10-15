@@ -18,10 +18,6 @@ align-items: baseline;
 opacity: 0.7;
 }
 
-/*.flex-container-row-menu li:first-child {
-border-bottom: 2px solid white;
-}*/
-
 
 .flex-container-row-art {
 display: flex;
@@ -52,6 +48,7 @@ margin-left: -40px; /*debug*/
 }
 .playlist ul li {
 list-style-type: none;
+overflow-x: hidden;
 }
 
 .listacanzoni{
@@ -126,6 +123,21 @@ align-items: baseline;
 }
 .linea{
 border: 2px solid grey;
+}
+/*main*/
+
+.cool-link::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s;
+}
+
+.cool-link:hover::after{
+  width: 100%;
+  
 }
 
 .brani{
